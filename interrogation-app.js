@@ -232,4 +232,4 @@ let questions =[
         correctAnswer: 1
     }
 
-]
+];
