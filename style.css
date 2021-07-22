@@ -1,4 +1,7 @@
-h1 {
-    color: red;
-    font-size: xx-small;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+h2 {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    color: blueviolet;
+    font-size: 35px;
 }
