@@ -1,4 +1,4 @@
-let questions =[
+var questions =[
     {
         question: "Which of the following JavaScript cannot do?",
         choices: ["JavaScript can react to events", "JavaScript can manipulate HTML elements",
@@ -233,3 +233,7 @@ let questions =[
     }
 
 ];
+
+var currentQuestion = 0;
+var correctAnswer = 0;
+var interrogationOver = false;
