@@ -237,3 +237,77 @@ var questions =[
 var currentQuestion = 0;
 var correctAnswer = 0;
 var interrogationOver = false;
+
+$(document).ready(function () {
+    displayCurrentQuestion();
+    $this.find(".interrogationMessage").hide();
+    $this.find(".nextButton").on("click", function() {
+        if(!interrogationOver){
+            value = $("input[type='radio']:checked").val();
+            if(value == undefined){
+                $(document).find(".interrogationMessage").text("Please select an answer");
+                $(document).find(".interrogationMessage").show();
+            }
+            else {
+                $(document).find(".interrogationMessage").hide();
+                if(value == questions[currentQuestion].correctAnswer) {
+                    correctAnswer++;
+                }
+                currentQuestion++;
+                if (currentQuestion < questions.length) {
+                    displayCurrentQuestion();
+                }
+                else {
+                    displayScore();
+                    $(document).find(".nextButton").text("Play Again");
+                    interrogationOver = true;
+                }
+            }
+        }
+        else {
+            interrogationOver = false;
+            $(document).find(".nextButton").text("Next Question");
+            resetQuiz();
+            displayCurrentQuestion();
+            hideScore();
+        }
+    })
+})
+
+
+function displayCurrentQuestion() {
+    
+    console.log("In display current question");
+
+    var question = questions[currentQuestion].question;
+    var interrogationClass = $(document).find(".interrogationContainer > .question");
+    var options = $(document).find(".interrogationContainer > .options");
+    var numChoices = questions[currentQuestion].choices.length;
+
+    // Set the interrogationClass text to the current question:
+    $(interrogationClass).text(question);
+
+    // Remove all current <li> elements (if any) :
+    $(options).find("li").remove();
+    
+    var choice ;
+    for ( i = 0; i < numChoices; i++) {
+        choice = questions[currentQuestion].choices[i];
+        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(options);
+    }
+}
+
+function resetQuiz() {
+    currentQuestion = 0;
+    correctAnswers = 0;
+    hideScore();
+}
+
+function displayScore() {
+    $(document).find(".interrogationContainer > .result").text("You scored: " + correctAnswers + " out of: " + questions.length);
+    $(document).find(".interrogationContainer > .result").show();
+}
+
+function hideScore() {
+    $(document).find(".result").hide();
+}
