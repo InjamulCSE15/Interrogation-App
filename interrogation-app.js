@@ -230,6 +230,6 @@ let questions =[
         question:"Using _______ statement is how you test for a specific condition.",
         choices: ["Select","If","Switch","For"],
         correctAnswer: 1
-    },
+    }
 
 ]
