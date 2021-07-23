@@ -3,7 +3,7 @@
 h2 {
     font-family: 'Crimson Text', serif;
     text-align: center;
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     font-size: 35px;
 }
 
@@ -14,7 +14,7 @@ ul {
 li {
     font-family: 'Crimson Text', serif;
     font-size: 2em;
-    color: #feb135;
+    color: #fbfbfb;
 }
 
 input[type=radio] {
@@ -33,7 +33,7 @@ p {
     border-radius: 8px;
     width: 75%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     padding-top: 5px;
     position: relative;
 }
@@ -50,18 +50,32 @@ p {
     position: relative;
     margin: auto;
     padding-top: 20px;
+    cursor: pointer;
 }
 
-.ques {
+.nextButton:hover{
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: #2be909;
+    color: #000000;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+.question {
     font-family: 'Crimson Text', serif;
     font-size: 2em;
     width: 90%;
     height: auto;
     margin: auto;
     border-radius: 6px;
-    background-color: #f2f205;
+    background-color: #ffffff;
     text-align: center;
-    color: #27a632;
+    color: #000000;
 }
 
 .interrogationMessage {

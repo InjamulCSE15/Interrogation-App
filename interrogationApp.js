@@ -240,8 +240,8 @@ var interrogationOver = false;
 
 $(document).ready(function () {
     displayCurrentQuestion();
-    $this.find(".interrogationMessage").hide();
-    $this.find(".nextButton").on("click", function() {
+    $(this).find(".interrogationMessage").hide();
+    $(this).find(".nextButton").on("click", function() {
         if(!interrogationOver){
             value = $("input[type='radio']:checked").val();
             if(value == undefined){
