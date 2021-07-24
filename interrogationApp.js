@@ -201,38 +201,39 @@ var questions =[
         choices: ["font","class","styles","style"],
         correctAnswer: 2
     },
-    {
-        question:"Which is the correct CSS syntax?",
-        choices: ["body:color=black","{body;color:black}","{body:color=black(body}","body {color: black}"],
-        correctAnswer: 3
-    },
-    {
-        question:"How do you change the text color of an element?",
-        choices: ["text-color=","text-color:","color:","fgcolor:"],
-        correctAnswer: 2
-    },
-    {
-        question:"How do you display hyperlinks without an underline?",
-        choices: ["a {text-decoration:none}","a {underline:none}","a {text-decoration:no underline}","a {decoration:no underline}"],
-        correctAnswer: 0
-    },
-    {
-        question:"How do you change the font of an element?",
-        choices: ["font=","f:","font-family:","None of the above"],
-        correctAnswer: 2
-    },
-    {
-        question:"How do you change the left margin of an element?",
-        choices: ["text-indent:","margin:","margin-left","indent:"],
-        correctAnswer: 2
-    },
-    {
-        question:"Using _______ statement is how you test for a specific condition.",
-        choices: ["Select","If","Switch","For"],
-        correctAnswer: 1
-    }
+    // {
+    //     question:"Which is the correct CSS syntax?",
+    //     choices: ["body:color=black","{body;color:black}","{body:color=black(body}","body {color: black}"],
+    //     correctAnswer: 3
+    // },
+    // {
+    //     question:"How do you change the text color of an element?",
+    //     choices: ["text-color=","text-color:","color:","fgcolor:"],
+    //     correctAnswer: 2
+    // },
+    // {
+    //     question:"How do you display hyperlinks without an underline?",
+    //     choices: ["a {text-decoration:none}","a {underline:none}","a {text-decoration:no underline}","a {decoration:no underline}"],
+    //     correctAnswer: 0
+    // },
+    // {
+    //     question:"How do you change the font of an element?",
+    //     choices: ["font=","f:","font-family:","None of the above"],
+    //     correctAnswer: 2
+    // },
+    // {
+    //     question:"How do you change the left margin of an element?",
+    //     choices: ["text-indent:","margin:","margin-left","indent:"],
+    //     correctAnswer: 2
+    // },
+    // {
+    //     question:"Using _______ statement is how you test for a specific condition.",
+    //     choices: ["Select","If","Switch","For"],
+    //     correctAnswer: 1
+    // }
 
 ];
+console.log(questions.length);
 
 var currentQuestion = 0;
 var correctAnswer = 0;
