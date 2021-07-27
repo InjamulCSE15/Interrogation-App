@@ -13,7 +13,7 @@ ul {
 
 li {
     font-family: 'Crimson Text', serif;
-    font-size: 1em;
+    font-size: 2em;
     color: #fbfbfb;
 }
 
@@ -68,7 +68,7 @@ p {
 }
 .question {
     font-family: 'Crimson Text', serif;
-    font-size: 1em;
+    font-size: 2em;
     width: 90%;
     height: auto;
     margin: auto;
